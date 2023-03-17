@@ -59,17 +59,38 @@
             </nav>
         </div>
 
-        <div id="top-bar" class=" d-flex flex-column gy-3">
+        <div id="top-bar">
+            <div class="d-flex flex-column justify-content-around" id="top-bar-container">
 
-            <div class="d-flex text-white">
-                <h3>Nuovo Studente</h3>
-                <i class="fa-regular fa-square-plus"></i>
-            </div>
-            <div>
-                asd
-            </div>
-            <div>
-                asd
+                <div class="d-flex text-white align-items-center order-1">
+                    <span class="fs-5">Nuovo Studente</span>
+                    <a class="d-flex text-white align-items-center justify-content-center plus-btn ms-4">
+                        <i class="fa-solid fa-plus fs-6"></i>
+                    </a>
+                </div>
+
+                <div class="order-2"> 
+
+                    <div class="text-white flex-row  align-items-center d-flex gap-1">
+                        <span class="fs-2">Boolean</span>
+                        <a class="badge rounded-pill pill-bg-blue ">Piano blaze</a>
+                    </div>
+
+                    <div>
+                        <a class="badge rounded-pill pill-bg-blue order-3">3 app</a>
+                        <i class="fa-solid fa-angles-right text-white"></i>
+                        <a class="badge rounded-pill pill-bg-blue more">+</a>
+                        <a class="badge rounded-pill pill-bg-blue d-none">Boolean mobile app</a>
+                        <a class="badge rounded-pill pill-bg-blue  d-none">Boolean mobile app</a>
+                        <a class="badge rounded-pill pill-bg-blue  d-none">Boolean mobile app</a>
+                    </div>
+                </div>  
+
+                <div class="text-white d-flex flex-column order-3"> 
+                    <span class="fs-6">Studenti online negli ultimi 30 minuti</span>
+                    <span class="fs-1">125</span>
+                </div>
+
             </div>
 
         </div>

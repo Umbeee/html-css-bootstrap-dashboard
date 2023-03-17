@@ -69,12 +69,30 @@ ul{
 }
 
 
+
 #top-bar{
-    height: 180px;
+    height: 200px;
     background-color: #1B72E8;
     width: calc(100% - 80px);
     margin-left: 80px;
 }
+#top-bar-container{
+    margin: auto;
+    width: 95%;
+}
+#top-bar > div{
+    height: 100%;
+}
+.plus-btn{
+    border: 1px solid white;
+    width: 40px;
+    border-radius: 5px;
+    aspect-ratio: 1;
+}
+.pill-bg-blue{
+    background-color: #165BBA;
+}
+
 
 
 /* media query, tablet */
@@ -82,6 +100,25 @@ ul{
     #top-bar{
         height: 110px;
     }
+    #top-bar-container{
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: flex-start;
+        gap: 2.5% !important;
+    }
+    .order-1{
+        order: 4 !important;
+        flex-basis: 30%;
+        margin-top: 1rem;
+    }
+    .order-2{
+        order: 1 !important;
+        flex-basis: 30%;
+        
+    }
+    
+    
+    
 }
 
 
@@ -111,9 +148,31 @@ ul{
     }
 
     #top-bar{
-        height: 80px;
+        height: 120px;
         background-color: #1B72E8;
         width: calc(100% - 115px);
         margin-left: 115px;
+    }
+    #top-bar-container{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: flex-start;
+        gap: 2.5% !important;
+    }
+    .order-1{
+        flex-basis: 20%;
+    }
+    .order-2{
+        flex-basis: 40%;
+    }
+    .order-3{
+        flex-basis: 30%;
+        margin-top: 20px;
+    }
+    .badge.rounded-pill.pill-bg-blue.d-none{
+        display: inline-block !important;
+    }
+    .more{
+        display: none;
     }
 }
