@@ -3,6 +3,8 @@ header{
     height: 8vh;
     width: 100%;
     background-color: white;
+    position: sticky;
+    top: 0;
 }
 .debug{
     border: 1px dotted red;
@@ -27,13 +29,21 @@ form{
     color: gold;
     font-size: 1.5em;
 }
-
+.data,
+.roi{
+    display: none;
+}
 
 /* sezione main */
 
 main{
     height: 92vh;
     width: 100%;
+}
+#main{
+    height: 100%;
+    width: calc(100% - 80px);
+    margin-left: 80px;
 }
 
 #aside{
@@ -93,6 +103,15 @@ ul{
     background-color: #165BBA;
 }
 
+.card{
+    width: 90%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 20px;
+}
+.classe-avatar{
+    height: 25px;
+    width: 25px;
+}
 
 
 /* media query, tablet */
@@ -117,8 +136,13 @@ ul{
         
     }
     
-    
-    
+    .data,
+    .roi{
+    display: table-cell;
+    }
+    /* tr  >.flex-column{
+        flex-direction: row !important;
+    } */
 }
 
 
@@ -174,5 +198,9 @@ ul{
     }
     .more{
         display: none;
+    }
+    #main{
+        width: calc(100% - 115px);
+        margin-left: 115px;
     }
 }
