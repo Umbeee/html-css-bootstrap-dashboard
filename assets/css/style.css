@@ -99,12 +99,7 @@ ul{
 #top-bar > div{
     height: 100%;
 }
-.plus-btn{
-    border: 1px solid white;
-    width: 40px;
-    border-radius: 5px;
-    aspect-ratio: 1;
-}
+
 .pill-bg-blue{
     background-color: #165BBA;
 }
@@ -121,9 +116,21 @@ ul{
 nav div ul li{
     padding: 10px;
 }
+
+nav div ul li:hover{
+    transition: 1s;
+    background-color: rgb(173, 173, 173);
+}
 .offcanvas{
     z-index: 934857394573875;
 }
+.list-type-none{
+    list-style-type: none;
+}
+
+
+
+
 
 /* media query, tablet */
 @media only screen and (min-width: 768px){
