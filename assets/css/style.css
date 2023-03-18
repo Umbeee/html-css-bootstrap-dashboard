@@ -5,6 +5,7 @@ header{
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 999999999;
 }
 .debug{
     border: 1px dotted red;
@@ -103,7 +104,7 @@ ul{
     background-color: #165BBA;
 }
 
-.card{
+.card-custom{
     width: 90%;
     margin-left: auto; margin-right: auto;
     margin-top: 20px;
@@ -202,5 +203,34 @@ ul{
     #main{
         width: calc(100% - 115px);
         margin-left: 115px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    #prossime-classi{
+        height: 65%;
+        order: 0;
+        width: 60%;
+    }
+
+    #todo{
+        order: 3;
+        height: 25%;
+        width: 30%;
+    }
+    #faq{
+        order: 1;
+        height: 30%;
+        width: 60%;
+    }
+    #stats{
+        order: 4;
+        height: 70%;
+        width: 30%;
+    }
+    .card-img-top{
+        height: 300px;
     }
 }
