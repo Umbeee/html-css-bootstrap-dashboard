@@ -30,6 +30,11 @@ form{
     color: gold;
     font-size: 1.5em;
 }
+.fa-ellipsis-vertical,
+.fa-question,
+.fa-list{
+    display: none !important; 
+}
 .data,
 .roi{
     display: none;
@@ -113,7 +118,12 @@ ul{
     height: 25px;
     width: 25px;
 }
-
+nav div ul li{
+    padding: 10px;
+}
+.offcanvas{
+    z-index: 934857394573875;
+}
 
 /* media query, tablet */
 @media only screen and (min-width: 768px){
@@ -203,34 +213,49 @@ ul{
     #main{
         width: calc(100% - 115px);
         margin-left: 115px;
-        
+        height: 120vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
     }
     #prossime-classi{
-        height: 65%;
+        height: 62%;
         order: 0;
         width: 60%;
     }
 
     #todo{
         order: 3;
-        height: 25%;
-        width: 30%;
+        height: 22%;
+        width: 38%;
     }
     #faq{
         order: 1;
-        height: 30%;
+        height: 25%;
         width: 60%;
+        margin-top: 20px;
     }
     #stats{
         order: 4;
-        height: 70%;
-        width: 30%;
+        height: 64%;
+        width: 38%;
+        margin-top: 20px;
     }
     .card-img-top{
         height: 300px;
+    }
+    .card-custom{
+        margin: 0;
+    }
+    form{
+        width: 70%;
+    }
+    .fa-ellipsis-vertical,
+    .fa-question,
+    .fa-list{
+        display: inline-block !important;
     }
 }
