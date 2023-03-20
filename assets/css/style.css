@@ -128,7 +128,9 @@ nav div ul li:hover{
     list-style-type: none;
 }
 
-
+#offcanvasRight{
+    width: 100%;
+}
 
 
 
@@ -161,6 +163,11 @@ nav div ul li:hover{
     /* tr  >.flex-column{
         flex-direction: row !important;
     } */
+
+    #offcanvasRight{
+        width: 100%;
+    }
+    
 }
 
 
@@ -264,5 +271,8 @@ nav div ul li:hover{
     .fa-question,
     .fa-list{
         display: inline-block !important;
+    }
+    #offcanvasRight{
+        width: 50%;
     }
 }
